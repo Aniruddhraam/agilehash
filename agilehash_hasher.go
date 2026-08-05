@@ -12,6 +12,9 @@ var _ hash.Hash64 = (*Hasher)(nil)
 var _ hash.Hash32 = (*Hasher)(nil)
 var _ io.StringWriter = (*Hasher)(nil)
 
+// DefaultBlockSize is the default block size (112 bytes) used by Hasher.
+const DefaultBlockSize = 112
+
 // Hasher implements [hash.Hash32] and [hash.Hash64] for streaming hash computation.
 //
 // Note: For memory-efficiency with large inputs, consider using [Hash] directly.

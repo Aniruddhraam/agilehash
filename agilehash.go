@@ -5,17 +5,30 @@ import (
 	"unsafe"
 )
 
-// Secret constants for agilehash.
-// These are carefully chosen constants that provide good hash distribution.
+// DefaultSeed is the default 64-bit seed value (0) used by agilehash.
+const DefaultSeed uint64 = 0
+
+// Secret constants used by the core agilehash mixing algorithm.
 const (
-	secret0 = 0x2d358dccaa6c78a5
-	secret1 = 0x8bb84b93962eacc9
-	secret2 = 0x4b33a62ed433d4a3
-	secret3 = 0x4d5a2da51de1aa47
-	secret4 = 0xa0761d6478bd642f
-	secret5 = 0xe7037ed1a0b428db
-	secret6 = 0x90ed1765281c388c
-	secret7 = 0xaaaaaaaaaaaaaaaa
+	Secret0 uint64 = 0x2d358dccaa6c78a5
+	Secret1 uint64 = 0x8bb84b93962eacc9
+	Secret2 uint64 = 0x4b33a62ed433d4a3
+	Secret3 uint64 = 0x4d5a2da51de1aa47
+	Secret4 uint64 = 0xa0761d6478bd642f
+	Secret5 uint64 = 0xe7037ed1a0b428db
+	Secret6 uint64 = 0x90ed1765281c388c
+	Secret7 uint64 = 0xaaaaaaaaaaaaaaaa
+)
+
+const (
+	secret0 = Secret0
+	secret1 = Secret1
+	secret2 = Secret2
+	secret3 = Secret3
+	secret4 = Secret4
+	secret5 = Secret5
+	secret6 = Secret6
+	secret7 = Secret7
 
 	// Precomputed: mix(secret2, secret1) - used when seed=0 to skip a multiply
 	seed0Mixed = 0x422765567d8fbfd6
