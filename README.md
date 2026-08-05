@@ -1,5 +1,7 @@
 # agilehash
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/Aniruddhraam/agilehash.svg)](https://pkg.go.dev/github.com/Aniruddhraam/agilehash)
+
 a Go implementation of the agilehash V3 algorithm - a blazingly fast, high-quality, platform-independent hashing algorithm heavily optimized for keys under 1 KB (making it ideal for Redis-replacement storage backends and HPC key-value engines).
 
 ## Key Features & QoL Updates
