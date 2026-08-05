@@ -123,7 +123,7 @@ func (h *Hasher) Write(p []byte) (n int, err error) {
 	if len(p) > 112 {
 		ptr := unsafe.Pointer(unsafe.SliceData(p))
 		ptr, newI, newSeed, newSee1, newSee2, newSee3, newSee4, newSee5, newSee6 := accumBlocks(ptr, len(p), h.seed, h.see1, h.see2, h.see3, h.see4, h.see5, h.see6)
-		
+
 		processed := len(p) - newI
 		copy(h.last16[:], p[processed-16:processed])
 
@@ -134,7 +134,7 @@ func (h *Hasher) Write(p []byte) (n int, err error) {
 		h.see4 = newSee4
 		h.see5 = newSee5
 		h.see6 = newSee6
-		
+
 		p = p[len(p)-newI:]
 	}
 
