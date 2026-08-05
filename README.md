@@ -13,7 +13,7 @@ a Go implementation of the agilehash V3 algorithm - a blazingly fast, high-quali
 ## Install
 
 ```bash
-go get go.dw1.io/agilehash
+go get github.com/Aniruddhraam/agilehash
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ package main
 
 import (
     "fmt"
-    "go.dw1.io/agilehash"
+    "github.com/Aniruddhraam/agilehash"
 )
 
 func main() {
@@ -115,7 +115,7 @@ System Configuration:
 ```
 goos: linux
 goarch: amd64
-pkg: go.dw1.io/agilehash
+pkg: github.com/Aniruddhraam/agilehash
 cpu: Intel(R) Core(TM) Ultra 9 185H
 BenchmarkComputes/8/Hash-22             668326960                1.764 ns/op   4534.25 MB/s            0 B/op          0 allocs/op
 BenchmarkComputes/8/Hasher-22           215850195                5.498 ns/op   1455.09 MB/s            0 B/op          0 allocs/op
@@ -155,7 +155,7 @@ BenchmarkComparable/array-22            15474188                67.64 ns/op     
 BenchmarkComparable/struct-22           11497543               107.1 ns/op            32 B/op          1 allocs/op
 BenchmarkHasher1K_Chunked-22            18138518                65.53 ns/op     15625.44 MB/s          0 B/op          0 allocs/op
 PASS
-ok      go.dw1.io/agilehash     54.812s
+ok      github.com/Aniruddhraam/agilehash     54.812s
 ```
 
 </details>
@@ -167,4 +167,4 @@ ok      go.dw1.io/agilehash     54.812s
 
 ## License
 
-MIT. See [LICENSE](/LICENSE).
+Apache 2.0. See [LICENSE](/LICENSE).

@@ -3,7 +3,7 @@ package agilehash_test
 import (
 	"testing"
 
-	"go.dw1.io/agilehash"
+	"github.com/Aniruddhraam/agilehash"
 )
 
 func BenchmarkHasher1K_Chunked(b *testing.B) {

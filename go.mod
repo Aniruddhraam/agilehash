@@ -1,3 +1,3 @@
-module go.dw1.io/agilehash
+module github.com/Aniruddhraam/agilehash
 
 go 1.20

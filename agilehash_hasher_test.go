@@ -5,7 +5,7 @@ import (
 	"hash"
 	"testing"
 
-	"go.dw1.io/agilehash"
+	"github.com/Aniruddhraam/agilehash"
 )
 
 func TestHasher(t *testing.T) {

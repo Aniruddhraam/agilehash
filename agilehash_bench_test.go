@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"go.dw1.io/agilehash"
+	"github.com/Aniruddhraam/agilehash"
 )
 
 var sizes = []int{8, 16, 32, 64, 128, 256, 512, 1024, 4096, 8192}

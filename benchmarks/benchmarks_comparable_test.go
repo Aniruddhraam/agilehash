@@ -4,7 +4,7 @@ import (
 	"hash/maphash"
 	"testing"
 
-	"go.dw1.io/agilehash"
+	"github.com/Aniruddhraam/agilehash"
 )
 
 type comparableStruct struct {
