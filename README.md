@@ -1,4 +1,4 @@
-# agilehash (GitHub Pages Deployment)
+# agilehash
 
 This branch contains the static files for the agilehash documentation website. 
 
